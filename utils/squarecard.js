@@ -7,8 +7,8 @@ template_scard.innerHTML = `
 <style>
     #info_card {
         background-color:#EBB2AD;
-        width: 241px;
-        height:241px;
+        width: 175px;
+        height:175px;
         border: 15px solid #F4E1E0;
         border-radius: 50px;
         margin: 2rem;

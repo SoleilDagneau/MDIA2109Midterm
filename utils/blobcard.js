@@ -6,17 +6,26 @@ template_bcard.innerHTML = `
 
 <style>
     #blob_text {
-        font-family:'nunito', sans-serif;
-        font-size:24px;
-        color:black;
+        font-family:'passion one', cursive;
+        font-size:40px;
+        color:#61A8FF;
         display:flex;
         justify-content:center;
+        position:relative;
+        left:-160px;
+        top:30px;
+    }
+    #the_blobcard{
+        width:40%;
+        display:flex;
     }
 </style>
-<img id="the_blobcard" src="" alt=""/>
-<p id="blob_text">
-blob text
-</p>
+<div id="the_blobcard">
+    <img id="" src="imgs/blob.svg" alt=""/>
+        <p id="blob_text">
+            blob text
+        </p>
+</div>  
 
 `;
 

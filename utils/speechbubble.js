@@ -11,14 +11,26 @@ template_speechbub.innerHTML = `
         border-radius: 10px;
         font-family: 'passion one', cursive;
         color: white;
-        font-size:24px;
+        font-size:20px;
+        margin:65px;
+        display:flex;
+        position:absolute;
+        top:45px;
+        left: 30px;
+
+    }
+    #speech_bubble{
+        width:40%;
+        
     }
 
 </style>
-<img id="speech_bubble" src="" alt=""/>
-<button id="next_button">
-    next...
-</button>
+<div id="cloud">
+    <img id="speech_bubble" src="imgs/cloud.svg" alt=""/>
+        <button id="next_button">
+            next...
+         </button>
+</div>
 
 `;
 

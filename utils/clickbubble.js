@@ -8,19 +8,29 @@ template_clickbubble.innerHTML = `
     #desc_text {
         font-family:'passion one', cursive;
         color: #F4AFAB;
-        font-size:30px;
+        font-size:25px;
         padding: 10px;
         background-color:#F4E1E0;
         border: 5px solid #F4AFAB;
         border-radius: 20px;
-
+        position: absolute;
+        display:flex;
+        left:25px;
+        margin:50px;
+    }
+    img{
+        width: 250px;
+    }
+    #click_bubble{
+        display:flex;
     }
 </style>
-
-<img id="click_bubble" src="" alt=""/>
-<button id="desc_text">
-    CLICK ME
-</button>
+<div id="click_bubble">
+    <img src="imgs/cloud.svg" alt="cloud svg"/>
+        <button id="desc_text">
+            CLICK ME
+        </button>
+</div>
 
 `;
 
