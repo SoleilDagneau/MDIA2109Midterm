@@ -20,7 +20,9 @@ template_speechbub.innerHTML = `
 
     }
     #speech_bubble{
-        width:40%;
+        width:250px;
+        display:flex;
+        position:relative;
         
     }
 

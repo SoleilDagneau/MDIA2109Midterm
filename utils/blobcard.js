@@ -7,26 +7,37 @@ template_bcard.innerHTML = `
 <style>
     #blob_text {
         font-family:'passion one', cursive;
-        font-size:40px;
+        font-size:60px;
         color:#61A8FF;
-        display:flex;
-        justify-content:center;
+        position:absolute;
+        text-align:center;
+        top:10px;
+        left:80px;
+    }
+    .blob_subtext{
+        font-size:30px;
+        color:#61A8FF;
+        font-family:'passion one', cursive;
+        display:block;
         position:relative;
-        left:-160px;
-        top:30px;
+        text-align:center;
+        top:-160px;
     }
     #the_blobcard{
-        width:40%;
-        display:flex;
+        width:250px;
     }
 </style>
-<div id="the_blobcard">
-    <img id="" src="imgs/blob.svg" alt=""/>
-        <p id="blob_text">
-            blob text
-        </p>
-</div>  
-
+<div class="container">
+    <div id="the_blobcard">
+        <img id="" src="imgs/blob.svg" alt=""/>
+            <h1 id="blob_text">
+                blob text
+            </h1>
+            <h3 class="blob_subtext">
+                animals end up homeless each year
+            </h3>
+    </div> 
+</div>
 `;
 
 //MUST HAVE - CREATE A CLASS WITH HTMLELEMENT POWERS (interfaces/functionalities)
@@ -44,6 +55,7 @@ class TheBlobCard extends HTMLElement {
     connectedCallback(){
         this.shadowRoot.appendChild(template_bcard.content.cloneNode(true));
         this.shadowRoot.querySelector("#blob_text").innerText = this.getAttribute("blob_text");
+        this.shadowRoot.querySelector("#blob_subtext").innerText = this.getAttribute("blob_subtext");
          //use the template to make a clone
     }
 

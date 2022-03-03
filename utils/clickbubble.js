@@ -8,18 +8,20 @@ template_clickbubble.innerHTML = `
     #desc_text {
         font-family:'passion one', cursive;
         color: #F4AFAB;
-        font-size:25px;
+        font-size:20px;
         padding: 10px;
         background-color:#F4E1E0;
         border: 5px solid #F4AFAB;
         border-radius: 20px;
         position: absolute;
         display:flex;
-        left:25px;
+        justify-content:center;
+        top:-10px;
+
         margin:50px;
     }
     img{
-        width: 250px;
+        width: 200px;
     }
     #click_bubble{
         display:flex;
