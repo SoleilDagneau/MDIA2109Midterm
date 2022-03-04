@@ -110,9 +110,9 @@
     top:-190px;
     left:150px;
 }
-.buildcont{
+.buildingcont{
     display:inline;
-    position:relative;
+    position:absolute;
     top:-50px;
 }
 

@@ -2,7 +2,7 @@
     display:block;
     position: relative;
     top:170px;
-    left:-55px;
+    left:50px;
 }
 
 
@@ -20,7 +20,7 @@
     display:flex;
     margin: auto;
     position: relative;
-    left: 135px;
+    left: 150px;
     top: -80px;
     right: 90px;
     justify-content: center;
@@ -109,11 +109,6 @@
     position:relative;
     top:-190px;
     left:150px;
-}
-.buildcont{
-    display:inline;
-    position:relative;
-    top:-50px;
 }
 
 

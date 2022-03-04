@@ -2,7 +2,7 @@
     display:block;
     position: relative;
     top:170px;
-    left:-55px;
+    left:-40px;
 }
 
 
@@ -109,11 +109,6 @@
     position:relative;
     top:-190px;
     left:150px;
-}
-.buildcont{
-    display:inline;
-    position:relative;
-    top:-50px;
 }
 
 
