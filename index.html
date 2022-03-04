@@ -22,6 +22,7 @@
     <script src="utils/blueblobcard.js"></script>
     <script src="utils/ball.js"></script>
     <script src="utils/leafcard.js"></script>
+    <script src="utils/rectcard.js"></script>
 
 </head>       
 <body>
@@ -66,29 +67,34 @@
 
     </div>
 
-    <!-----------
-        <div class="habitatloss">
+  
+    <div class="habitatloss">
         <div class="conttitle">
-            <img class="obtitle" src="imgs/habitatloss.svg" alt="habitat loss title">
-        </div>
-        <div class="contmonkey">  
-            <the-clickbubble class="testingtext" desc_text="CLICK ME"></the-clickbubble>
-            <img class="monkey" src="imgs/monkey.svg" alt="monkey img" width=150px>
+            <img class="hablosstitle" src="imgs/habitatloss.png" alt="habitat loss title">
         </div>
         <div>
-            <img src="imgs/leafwithbranch.svg" alt="leaf with branch" width=500px>
+            <img class="monkey" src="imgs/monkey.svg" alt="monkey picture" width="120px">           
+            <the-clickbubble class="monkeybubble" desc_text="CLICK ME"></the-clickbubble>
         </div>
-
-
-
-
-
+        <div class="branchcont">
+            <the-leafcard leaf_subtext="1000+"></the-leafcard>
+        </div>
+        <div class="habitatcont">
+            <the-squarecard class="pinkcard" info_text="Orangutans are killed per year due to palm oil deforestation"></the-squarecard>
+        </div>
+        <div class="leaf">
+            <img src="imgs/leaf.svg" alt="leaf" width="200px">
+        </div>
+        <div class="graphcont">
+            <img src="imgs/percent.svg" alt="pi graph" width="200px">
+        </div>
+        <the-rectcard></the-rectcard>
 
 
     </div>
 
 
-
+  <!-----------
     
     <div class="cosmetictesting">
         <div class="conttitle">
