@@ -117,3 +117,8 @@
     margin-right: 50px;
     margin-top: 20px;
 }
+
+.contcard3 {
+    display:flex;
+    justify-content: flex-end;
+}

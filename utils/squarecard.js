@@ -20,6 +20,7 @@ template_scard.innerHTML = `
         font-family: 'nunito', sans-serif;
         color: white;
         padding: 10px;
+        text-align: center;
 
     }
 </style>
