@@ -1,3 +1,20 @@
+.welcome{
+    display: flex;
+    position: fixed;
+    margin: auto;
+    top: 150px;
+    left: 90px;
+    right: 90px;
+}
+
+.welcomedog {
+    display:flex;
+    position: fixed;
+    margin: auto;
+    left: 300px;
+    top: 250px;
+    right: 90px;
+}
 
 .obtitle{
     width:350px;
@@ -76,7 +93,7 @@
     top:-190px;
     left:150px;
 }
-}
+
 
 /*------------------END OF SECTION 1----------------------------*/
 
@@ -157,11 +174,8 @@
     margin-top: 20px;
 }
 
-<<<<<<< HEAD
 /* -------------------------------END OF SECTION 2-------------------------------*/
-=======
 .contcard3 {
     display:flex;
     justify-content: flex-end;
 }
->>>>>>> c50fb2ae51f95940d10be489d89936334676cd9b
