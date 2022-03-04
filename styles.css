@@ -24,19 +24,137 @@
 .blob{
     display: flex;
     position:relative;
-    left:10px;
+    left:30px;
     top:80px;
 }
-.ballpic{
-    width:50px;
+.htext{
+    display:flex;
+    position: relative;
+    left: 200px;
+    top:-80px;
+}
+.house{
+    width:100px;
+    height:100px;
+    display:flex;
+    position:relative;
+    left:30px;
+
+}
+.tower{
+    width:100px;
+    height:100px;
+    display:flex;
+    position:relative;
+    left:250px;
+    top:-95px; 
+}
+.housetext{
+    font-family: 'passion one', cursive;
+    font-size:20px;
+    color:#61A8FF;
+    display:inline;
+    position:relative;
+    left:35px;
+    bottom:10px;
+}
+.puppymill{
+    font-family: 'passion one', cursive;
+    font-size:20px;
+    color:#61A8FF;
+    display:inline;
+    position:relative;
+    left:160px;
+    bottom: 10px;
+}
+.or{
+    font-family: 'passion one', cursive;
+    font-size:70px;
+    color:#EBB2AD;
+    display:inline;
+    position:relative;
+    top:-190px;
+    left:150px;
+}
+}
+
+/*------------------END OF SECTION 1----------------------------*/
+
+.syringe {
+    width:100px;
+    height: 100px;
     display: flex;
     position: relative;
-    left:20rem;
-    top:-15rem;
-    animation: bounce2 2s ease infinite;
+    left: 100px;
+    top: 50px;
+    margin: auto;
 }
-@keyframes bounce2 {
-	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-	40% {transform: translateY(-30px);}
-	60% {transform: translateY(-15px);}
+
+.testingtext{
+    display: flex;
+    position:sticky;
+    top:1000px;
+    left:100px;
+    margin: auto;
 }
+
+.testingblob1 {
+    display: flex;
+    position:relative;
+    left:10px;
+    top:150px;
+}
+
+.contcard {
+    display: flex;
+    position:relative;
+    top:100px;
+}
+
+.testingblob2 {
+    display: flex;
+    position:absolute;
+    left:300px;
+    top:1400px;
+}
+
+.testingblob3 {
+    display: flex;
+    position:relative;
+    left:10px;
+    top:100px;
+}
+
+.contcard1 {
+    display: flex;
+    position:relative;
+}
+
+.mouse {
+    width:200px;
+    height: 200px;
+    display: flex;
+    position: absolute;
+    left: 350px;
+    top: 1900px;
+    margin: auto;
+}
+
+.mouseclick {
+    display: flex;
+    position:absolute;
+    top:1800px;
+    left:250px;
+    margin: auto;
+}
+
+.contmonkey {
+    display:flex;
+    position:sticky;
+    left: 350px;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+/* -------------------------------END OF SECTION 2-------------------------------*/

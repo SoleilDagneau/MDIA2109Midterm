@@ -14,7 +14,7 @@ template_bcard.innerHTML = `
         top:10px;
         left:80px;
     }
-    .blob_subtext{
+    #blob_subtext{
         font-size:30px;
         color:#61A8FF;
         font-family:'passion one', cursive;
@@ -33,8 +33,8 @@ template_bcard.innerHTML = `
             <h1 id="blob_text">
                 blob text
             </h1>
-            <h3 class="blob_subtext">
-                animals end up homeless each year
+            <h3 id="blob_subtext">
+                blob subtext
             </h3>
     </div> 
 </div>

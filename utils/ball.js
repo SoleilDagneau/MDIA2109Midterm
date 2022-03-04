@@ -38,14 +38,13 @@ class TheBall extends HTMLElement {
     //MUST HAVE - FUNCTION THAT RUNS AFTER IT'S CONNECTED
     connectedCallback(){
         this.shadowRoot.appendChild(template_ball.content.cloneNode(true));
-        this.shadowRoot.querySelector(".ballpic") //use the template to make a clone
+        
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
-    HandleMoveObj(){
-        
-    }
+    
 }
+
 
 //MUST HAVE - define the tag for the custom elements
 customElements.define("the-ball", TheBall)
