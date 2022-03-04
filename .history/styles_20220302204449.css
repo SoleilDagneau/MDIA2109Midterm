@@ -1,0 +1,14 @@
+*{
+    background-color: #D6EEFF;
+}
+
+
+.obtitle{
+    width:350px;
+    display: flex;
+    position:relative;
+    margin: auto;
+}
+.cage{
+    width:150px;
+}
