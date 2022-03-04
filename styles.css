@@ -157,4 +157,11 @@
     margin-top: 20px;
 }
 
+<<<<<<< HEAD
 /* -------------------------------END OF SECTION 2-------------------------------*/
+=======
+.contcard3 {
+    display:flex;
+    justify-content: flex-end;
+}
+>>>>>>> c50fb2ae51f95940d10be489d89936334676cd9b

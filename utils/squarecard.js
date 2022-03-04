@@ -20,6 +20,11 @@ template_scard.innerHTML = `
         font-family: 'nunito', sans-serif;
         color: white;
         padding: 10px;
+<<<<<<< HEAD
+=======
+        text-align: center;
+
+>>>>>>> c50fb2ae51f95940d10be489d89936334676cd9b
     }
     #the_htext{
         font-family:'passion one', cursive;
