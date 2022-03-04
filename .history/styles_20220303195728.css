@@ -1,21 +1,3 @@
-.welcome{
-    display: flex;
-    position: fixed;
-    margin: auto;
-    top: 150px;
-    left: 90px;
-    right: 90px;
-}
-
-.welcomedog {
-    display:flex;
-    position: fixed;
-    margin: auto;
-    left: 300px;
-    top: 250px;
-    right: 90px;
-}
-/*--------------------------END OF TITLE SECTION-------------------------------*/
 
 .obtitle{
     width:350px;
@@ -87,14 +69,14 @@
 }
 .or{
     font-family: 'passion one', cursive;
-    font-size:70px;
-    color:#EBB2AD;
+    font-size:px;
+    color:#61A8FF;
     display:inline;
     position:relative;
-    top:-190px;
-    left:150px;
+    left:160px;
+    bottom: 10px;
 }
-
+}
 
 /*------------------END OF SECTION 1----------------------------*/
 
@@ -176,7 +158,3 @@
 }
 
 /* -------------------------------END OF SECTION 2-------------------------------*/
-.contcard3 {
-    display:flex;
-    justify-content: flex-end;
-}
