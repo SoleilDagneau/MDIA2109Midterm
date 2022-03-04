@@ -1,19 +1,21 @@
 .welcome{
     display: flex;
-    position: fixed;
+    position: relative;
     margin: auto;
     top: 150px;
     left: 90px;
     right: 90px;
+    justify-content: center;
 }
 
 .welcomedog {
     display:flex;
-    position: fixed;
+    position: relative;
     margin: auto;
     left: 300px;
     top: 250px;
     right: 90px;
+    justify-content: center;
 }
 
 .obtitle{
