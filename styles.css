@@ -53,7 +53,7 @@
 
 .testingtext{
     display: flex;
-    position:absolute;
+    position:sticky;
     top:1000px;
     left:100px;
     margin: auto;
@@ -107,4 +107,13 @@
     top:1800px;
     left:250px;
     margin: auto;
+}
+
+.contmonkey {
+    display:flex;
+    position:sticky;
+    left: 350px;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-top: 20px;
 }
