@@ -54,11 +54,7 @@ class TheClickBubble extends HTMLElement {
         this.shadowRoot.querySelector("#desc_text").onclick = () => {
             this.buttonDisappear();
             document.querySelector(".dogtextspeech").buttonAppear(this.getAttribute("desc_text"));
-            document.querySelector(".monkeyspeechbubble").buttonAppear(this.getAttribute("desc_text"));
-            document.querySelector(".mousespeechbub").buttonAppear(this.getAttribute("desc_text"));
         }
-       
-            
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!

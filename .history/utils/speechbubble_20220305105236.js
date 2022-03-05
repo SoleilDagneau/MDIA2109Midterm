@@ -52,16 +52,14 @@ class TheSpeechBubble extends HTMLElement {
     //MUST HAVE - FUNCTION THAT RUNS AFTER IT'S CONNECTED
     connectedCallback(){
         this.shadowRoot.appendChild(template_speechbub.content.cloneNode(true));
-        this.shadowRoot.querySelector("#next_button").innerText = this.getAttribute("button_text");
-       
+        this.shadowRoot.querySelector("#next_button").innerText = this.getAttribute("button_text"); //use the template to make a clone
+        
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
     buttonAppear() {
         this.shadowRoot.querySelector("#cloud").style.cssText = `
         display:block;
-        
-       
         `
     }
 }

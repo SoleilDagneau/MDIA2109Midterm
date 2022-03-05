@@ -53,7 +53,10 @@ class TheSpeechBubble extends HTMLElement {
     connectedCallback(){
         this.shadowRoot.appendChild(template_speechbub.content.cloneNode(true));
         this.shadowRoot.querySelector("#next_button").innerText = this.getAttribute("button_text");
-       
+        this.shadowRoot.querySelector("#next_button").onclick = () => {
+            
+         //use the template to make a clone
+        
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
