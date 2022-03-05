@@ -43,7 +43,6 @@ class TheBlueBlob extends HTMLElement {
     connectedCallback(){
         this.shadowRoot.appendChild(template_blueblob.content.cloneNode(true)); //use the template to make a clone
         this.shadowRoot.querySelector("#blob_text").innerText = this.getAttribute("blob_text");
-        this.shadowRoot.querySelector("#blob_subtext").innerText = this.getAttribute("blob_subtext");
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!

@@ -25,7 +25,7 @@ template_rectcard.innerHTML = `
 
 </style>
 
-<div id="infocard">
+<div id="infocard" class="scrollone">
 <div id="info_text">
 info text
 </div>
@@ -50,6 +50,7 @@ class TheRectCard extends HTMLElement {
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
+    
 }
 
 //MUST HAVE - define the tag for the custom elements
