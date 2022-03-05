@@ -245,17 +245,24 @@
 }
 
 .pinkcard {
-    width: 300px;
-    text-align: center;
+    position: relative;
+    right: 50px;
 }
 
 .leaf {
     position: relative;
     right: 30px;
+    top: 60px;
 }
 
 .graphcont {
     position: relative;
     left: 250px;
-    bottom: 40px;
+    bottom: -20px;
+}
+
+.rectcont {
+    position: relative;
+    left: 50px;
+    top: 40px;;
 }
