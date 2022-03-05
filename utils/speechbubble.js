@@ -5,6 +5,9 @@ var template_speechbub = document.createElement("template"); //<template> </temp
 template_speechbub.innerHTML = `
 
 <style>
+    #cloud {
+        display: none;
+    }
     #next_button {
         background-color:#61A8FF;
         border:3px solid #AFDDFF;
@@ -16,8 +19,7 @@ template_speechbub.innerHTML = `
         display:flex;
         position:absolute;
         top:45px;
-        left: 30px;
-
+        left:30px;
     }
     #speech_bubble{
         width:250px;
@@ -51,9 +53,15 @@ class TheSpeechBubble extends HTMLElement {
     connectedCallback(){
         this.shadowRoot.appendChild(template_speechbub.content.cloneNode(true));
         this.shadowRoot.querySelector("#next_button").innerText = this.getAttribute("button_text"); //use the template to make a clone
+        
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
+    buttonAppear() {
+        this.shadowRoot.querySelector("#cloud").style.cssText = `
+        display:block;
+        `
+    }
 }
 
 //MUST HAVE - define the tag for the custom elements

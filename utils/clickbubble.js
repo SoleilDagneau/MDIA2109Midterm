@@ -51,9 +51,18 @@ class TheClickBubble extends HTMLElement {
     connectedCallback(){
         this.shadowRoot.appendChild(template_clickbubble.content.cloneNode(true));
         this.shadowRoot.querySelector("#desc_text").innerText = this.getAttribute("desc_text"); //use the template to make a clone
+        this.shadowRoot.querySelector("#desc_text").onclick = () => {
+            this.buttonDisappear();
+            document.querySelector("#thespeechbubble").buttonAppear(this.getAttribute("desc_text"));
+        }
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
+    buttonDisappear() {
+        this.shadowRoot.querySelector("#click_bubble").style.cssText = `
+        display:none;
+        `
+    }
 }
 
 //MUST HAVE - define the tag for the custom elements
