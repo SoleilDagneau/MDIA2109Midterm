@@ -6,7 +6,7 @@ template_rectcard.innerHTML = `
 <style>
 #infocard {
     width: 350px;
-    height: 100px;
+    height: 80px;
     background-color:#77C5FF;
     border-radius: 8px;
     padding: 5px;
@@ -26,9 +26,9 @@ template_rectcard.innerHTML = `
 </style>
 
 <div id="infocard">
-<p id="info_text">
+<div id="info_text">
 info text
-</p>
+</div>
 </div>
 `;
 

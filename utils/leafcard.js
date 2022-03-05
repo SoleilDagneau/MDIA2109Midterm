@@ -7,13 +7,13 @@ template_leafcard.innerHTML = `
 <style>
 
     #leaf_subtext{
-        font-size:40px;
+        font-size:35px;
         color:#FFF;
         font-family:'passion one', cursive;
         display:block;
         position:relative;
         text-align:left;
-        top:-140px;
+        top:-120px;
         right: -20px;
 
     }

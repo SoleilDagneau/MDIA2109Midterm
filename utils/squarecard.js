@@ -21,7 +21,7 @@ template_scard.innerHTML = `
         color: white;
         padding: 10px;
         position:relative;
-        bottom:15px;
+        bottom:50px;
         left: 5px;
 <<<<<<< HEAD
 =======
@@ -56,7 +56,7 @@ template_scard.innerHTML = `
      OF THEM ARE EUTHANIZED.
     </h3>
 
-    <p id="info_text">info text</p>
+    <div id="info_text">info text</div>
 </div>
 `;
 
