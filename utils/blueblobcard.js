@@ -8,7 +8,7 @@ template_bbcard.innerHTML = `
     #blob_text {
         font-family:'passion one', cursive;
         font-size:60px;
-        color:#f4afab;
+        color:#F4AFAB;
         position:absolute;
         text-align:center;
         top:10px;

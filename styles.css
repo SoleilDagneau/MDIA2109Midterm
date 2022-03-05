@@ -135,24 +135,34 @@
     height: 100px;
     display: flex;
     position: relative;
+    left: 150px;
+    top: -90px;
+    margin: auto;
+}
+
+.bunny {
+    width:150px;
+    height: 150px;
+    display: flex;
+    position: relative;
     left: 100px;
-    top: 50px;
+    top: 70px;
     margin: auto;
 }
 
 .testingtext{
     display: flex;
-    position:sticky;
-    top:1000px;
-    left:100px;
+    position:absolute;
+    top:250px;
+    left:70px;
     margin: auto;
 }
 
 .testingblob1 {
     display: flex;
-    position:relative;
-    left:10px;
-    top:150px;
+    position:absolute;
+    left:0px;
+    top:400px;
 }
 
 .contcard {
