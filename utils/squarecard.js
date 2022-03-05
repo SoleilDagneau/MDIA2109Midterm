@@ -20,6 +20,9 @@ template_scard.innerHTML = `
         font-family: 'nunito', sans-serif;
         color: white;
         padding: 10px;
+        position:relative;
+        bottom:15px;
+        left: 5px;
 <<<<<<< HEAD
 =======
         text-align: center;
@@ -32,7 +35,8 @@ template_scard.innerHTML = `
         text-align:center;
         display:flex;
         position:relative;
-        top:20px;
+        top:10px;
+    
     }
     #the_manytext{
         font-family:'passion one', cursive;
@@ -40,7 +44,8 @@ template_scard.innerHTML = `
         display:flex;
         position:relative;
         justify-content:center;
-        top:40px;
+        top:20px;
+
     }
 
 </style>

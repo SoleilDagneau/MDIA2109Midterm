@@ -161,33 +161,36 @@
 .testingblob1 {
     display: flex;
     position:absolute;
-    left:0px;
-    top:400px;
+    right:350px;
+    top:175px;
 }
 
 .contcard {
     display: flex;
     position:relative;
-    top:100px;
+    top:120px;
+    left: 185px;
 }
 
 .testingblob2 {
     display: flex;
     position:absolute;
-    left:300px;
-    top:1400px;
+    left:200px;
+    top:600px;
 }
 
 .testingblob3 {
     display: flex;
     position:relative;
-    left:10px;
-    top:100px;
+    left:200px;
+    top:120px;
 }
 
 .contcard1 {
     display: flex;
     position:relative;
+    bottom: 145px;
+    right: 250px;
 }
 
 .mouse {
@@ -195,16 +198,16 @@
     height: 200px;
     display: flex;
     position: absolute;
-    left: 350px;
-    top: 1900px;
+    left: 250px;
+    top: 970px;
     margin: auto;
 }
 
 .mouseclick {
     display: flex;
     position:absolute;
-    top:1800px;
-    left:250px;
+    top:950px;
+    left:50px;
     margin: auto;
 }
 
