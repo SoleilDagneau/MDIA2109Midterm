@@ -123,6 +123,12 @@
 
 
 /*------------------END OF SECTION 1----------------------------*/
+.cosmetictesting {
+    display:block;
+    position:relative;
+    top:110px;
+    left: 75px;
+}
 
 .syringe {
     width:100px;
