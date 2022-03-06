@@ -1,8 +1,8 @@
 //MUST HAVE - CREATE A TEMPLATE TAG
-var template_clickbubble = document.createElement("template"); //<template> </template> RULE
+var template_monkeyclickbubble = document.createElement("template"); //<template> </template> RULE
 
 //To-do - CREATE THE UI HERE!
-template_clickbubble.innerHTML = `
+template_monkeyclickbubble.innerHTML = `
 
 <style>
     #desc_text {
@@ -17,7 +17,6 @@ template_clickbubble.innerHTML = `
         display:flex;
         justify-content:center;
         top:-10px;
-
         margin:50px;
     }
     img{
@@ -33,11 +32,10 @@ template_clickbubble.innerHTML = `
             CLICK ME
         </button>
 </div>
-
 `;
 
 //MUST HAVE - CREATE A CLASS WITH HTMLELEMENT POWERS (interfaces/functionalities)
-class TheClickBubble extends HTMLElement {
+class TheMonkeyClickBubble extends HTMLElement {
 
     //MUST HAVE - CREATE A CONSTRUCTOR TO DO INITAL ASSOCIATIONS
     constructor(){
@@ -49,16 +47,12 @@ class TheClickBubble extends HTMLElement {
 
     //MUST HAVE - FUNCTION THAT RUNS AFTER IT'S CONNECTED
     connectedCallback(){
-        this.shadowRoot.appendChild(template_clickbubble.content.cloneNode(true));
+        this.shadowRoot.appendChild(template_monkeyclickbubble.content.cloneNode(true)); //use the template to make a clone
         this.shadowRoot.querySelector("#desc_text").innerText = this.getAttribute("desc_text"); //use the template to make a clone
         this.shadowRoot.querySelector("#desc_text").onclick = () => {
             this.buttonDisappear();
-            document.querySelector(".dogtextspeech").buttonAppear(this.getAttribute("desc_text"));
-            //document.querySelector(".monkeyspeechbubble").buttonAppear(this.getAttribute("desc_text"));
-            //document.querySelector(".mousespeechbub").buttonAppear(this.getAttribute("desc_text"));
+            document.querySelector(".monkeyspeechbubble").buttonAppear(this.getAttribute("desc_text"));
         }
-       
-            
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
@@ -70,4 +64,4 @@ class TheClickBubble extends HTMLElement {
 }
 
 //MUST HAVE - define the tag for the custom elements
-customElements.define("the-clickbubble", TheClickBubble)
+customElements.define("the-monkeyclickbubble", TheMonkeyClickBubble)
