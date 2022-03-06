@@ -1,3 +1,8 @@
+body{
+    background-image: url(imgs/background.svg);
+    background-size: cover;
+}
+
 .titlepage{
     display:block;
     position: relative;
