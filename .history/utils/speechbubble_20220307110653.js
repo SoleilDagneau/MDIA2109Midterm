@@ -70,6 +70,8 @@ class TheSpeechBubble extends HTMLElement {
     buttonAppear() {
         this.shadowRoot.querySelector("#cloud").style.cssText = `
         display:block;
+        
+       
         `
     }
 }

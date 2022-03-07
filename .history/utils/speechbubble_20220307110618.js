@@ -34,6 +34,8 @@ template_speechbub.innerHTML = `
         position:absolute;
         text-align:center;
         top:20px;
+
+
     }
 
 </style>
@@ -62,7 +64,6 @@ class TheSpeechBubble extends HTMLElement {
     connectedCallback(){
         this.shadowRoot.appendChild(template_speechbub.content.cloneNode(true));
         this.shadowRoot.querySelector("#next_button").innerText = this.getAttribute("button_text");
-        this.shadowRoot.querySelector("#cloud_text").innerText = this.getAttribute("cloud_text");
        
     }
 
@@ -70,6 +71,8 @@ class TheSpeechBubble extends HTMLElement {
     buttonAppear() {
         this.shadowRoot.querySelector("#cloud").style.cssText = `
         display:block;
+        
+       
         `
     }
 }

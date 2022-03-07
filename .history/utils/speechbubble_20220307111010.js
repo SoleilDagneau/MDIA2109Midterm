@@ -63,13 +63,17 @@ class TheSpeechBubble extends HTMLElement {
         this.shadowRoot.appendChild(template_speechbub.content.cloneNode(true));
         this.shadowRoot.querySelector("#next_button").innerText = this.getAttribute("button_text");
         this.shadowRoot.querySelector("#cloud_text").innerText = this.getAttribute("cloud_text");
-       
+        this.shadowRoot.querySelector("#next_button").onclick = () => {
+            this.buttonDisappear();
+            document.querySelector(".dogtextspeech").buttonAppear(this.getAttribute("desc_text"));
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
     buttonAppear() {
         this.shadowRoot.querySelector("#cloud").style.cssText = `
         display:block;
+        
+       
         `
     }
 }

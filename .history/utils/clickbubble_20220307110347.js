@@ -20,7 +20,12 @@ template_clickbubble.innerHTML = `
 
         margin:50px;
     }
+    #cloud_text{
+        font-family:'nunito', sans-serif;
+        color:#61A8FF;
+        display:absolute;
 
+    }
     img{
         width: 200px;
     }
@@ -30,7 +35,7 @@ template_clickbubble.innerHTML = `
 </style>
 <div id="click_bubble">
     <img src="imgs/cloud.svg" alt="cloud svg"/>
-        
+        <p id="cloud_text">Breeding occurs when an individual or individuals breed animals for their own profit.</p>
         <button id="desc_text">
             CLICK ME
         </button>
