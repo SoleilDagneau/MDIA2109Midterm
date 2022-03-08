@@ -48,10 +48,7 @@ class TheBall extends HTMLElement {
     //To-do - CREATE THE FUNCTIONALITIES HERE!
     ballSlide(){
         this.shadowRoot.querySelector(".ball").style.cssText = `
-        display:flex;
-        position:relative;
-        top:180px;
-        left: -150px;
+        display:none;
         `
     }
     

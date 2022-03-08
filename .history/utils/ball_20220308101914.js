@@ -51,7 +51,6 @@ class TheBall extends HTMLElement {
         display:flex;
         position:relative;
         top:180px;
-        left: -150px;
         `
     }
     

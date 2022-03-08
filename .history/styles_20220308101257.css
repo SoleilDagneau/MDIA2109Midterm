@@ -133,7 +133,11 @@ body{
     position:relative;
     left: 30px;
 }
-
+the-ball{
+    display: flex;
+    position: relative;
+    top:100px;
+}
 
 
 /*------------------END OF SECTION 1----------------------------*/
