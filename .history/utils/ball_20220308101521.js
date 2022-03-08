@@ -38,23 +38,16 @@ class TheBall extends HTMLElement {
     //MUST HAVE - FUNCTION THAT RUNS AFTER IT'S CONNECTED
     connectedCallback(){
         this.shadowRoot.appendChild(template_ball.content.cloneNode(true));
-        this.shadowRoot.querySelector(".ballpic").onclick = () => {
-            this.ballSlide();
-            document.querySelector("the-ball").buttonAppear(this.getAttribute(".ballpic"));
-            
-        }
+        
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
     ballSlide(){
         this.shadowRoot.querySelector(".ball").style.cssText = `
-        display:flex;
-        position:relative;
+        display: flex;
+        position: relative;
         top:180px;
-        left: -150px;
-        `
     }
-    
     
 }
 

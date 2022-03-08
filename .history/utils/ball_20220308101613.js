@@ -39,21 +39,14 @@ class TheBall extends HTMLElement {
     connectedCallback(){
         this.shadowRoot.appendChild(template_ball.content.cloneNode(true));
         this.shadowRoot.querySelector(".ballpic").onclick = () => {
-            this.ballSlide();
-            document.querySelector("the-ball").buttonAppear(this.getAttribute(".ballpic"));
-            
+            this.buttonDisappear();
+            document.querySelector(".dogtextspeech").buttonAppear(this.getAttribute("desc_text"));
+            //document.querySelector(".monkeyspeechbubble").buttonAppear(this.getAttribute("desc_text"));
+            //document.querySelector(".mousespeechbub").buttonAppear(this.getAttribute("desc_text"));
         }
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
-    ballSlide(){
-        this.shadowRoot.querySelector(".ball").style.cssText = `
-        display:flex;
-        position:relative;
-        top:180px;
-        left: -150px;
-        `
-    }
     
     
 }

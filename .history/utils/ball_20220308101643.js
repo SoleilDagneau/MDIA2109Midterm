@@ -40,20 +40,13 @@ class TheBall extends HTMLElement {
         this.shadowRoot.appendChild(template_ball.content.cloneNode(true));
         this.shadowRoot.querySelector(".ballpic").onclick = () => {
             this.ballSlide();
-            document.querySelector("the-ball").buttonAppear(this.getAttribute(".ballpic"));
-            
+            document.querySelector("the-ball").buttonAppear(this.getAttribute("desc_text"));
+            //document.querySelector(".monkeyspeechbubble").buttonAppear(this.getAttribute("desc_text"));
+            //document.querySelector(".mousespeechbub").buttonAppear(this.getAttribute("desc_text"));
         }
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
-    ballSlide(){
-        this.shadowRoot.querySelector(".ball").style.cssText = `
-        display:flex;
-        position:relative;
-        top:180px;
-        left: -150px;
-        `
-    }
     
     
 }
