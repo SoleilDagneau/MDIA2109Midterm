@@ -142,6 +142,17 @@
             </div>
 
         </div>
+        <script>
+            function handleBodyScroll(numScroll=0) {
+                console.log(numScroll)
+                if (numScroll > 2000) {
+                    document.querySelector(".pinkcard").style.right = "110px"
+                }
+            
+
+            }
+            document.body.onscroll= (e) => handleBodyScroll(e.target.documentElement.scrollTop);
+        </script>
 </body>
 
 </html>

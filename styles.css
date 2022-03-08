@@ -270,8 +270,9 @@ body{
 
 .pinkcard {
     position: relative;
-    right: 110px;
+    right: -310px;
     top: 55px;
+    transition: right 1s;
 }
 
 .leaf {
