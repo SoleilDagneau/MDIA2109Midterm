@@ -74,14 +74,14 @@ class TheSquareCard extends HTMLElement {
         this.shadowRoot.querySelector("#the_manytext").innerText = this.getAttribute("the_manytext");
         this.shadowRoot.querySelector("#info_card").onmouseover = () => {
             this.textDissapear();
-            document.querySelector("the-squarecard").textDissapear(this.getAttribute("info_card"));
+            document.querySelector("the-squarecard").textDissapear(this.getAttribute("info_text"));
             
         } //use the template to make a clone
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
     textDisappear() {
-        this.shadowRoot.querySelector(".htext").style.cssText = `
+        this.shadowRoot.querySelector("#info_card").style.cssText = `
         display:none;
         `
     }

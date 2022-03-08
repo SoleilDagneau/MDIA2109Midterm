@@ -81,7 +81,7 @@ class TheSquareCard extends HTMLElement {
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
     textDisappear() {
-        this.shadowRoot.querySelector(".htext").style.cssText = `
+        this.shadowRoot.querySelector("#info_card").style.cssText = `
         display:none;
         `
     }
