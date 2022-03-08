@@ -27,7 +27,7 @@ template_speechbub.innerHTML = `
         position:relative;
         
     }
-    #cloud_text{
+    #cloud_text, .cloud_text2{
         font-family:'nunito', sans-serif;
         color:#61A8FF;
         display:block;
@@ -36,10 +36,20 @@ template_speechbub.innerHTML = `
         top:20px;
     }
 
+    .cloudcont {
+        width: 210px;
+        position: relative;
+        left: 20px;
+        bottom: 140px;
+
+    }
+
 </style>
 <div id="cloud">
     <img id="speech_bubble" src="imgs/cloud.svg" alt=""/>
-    <p id="cloud_text">Breeding occurs when an individual or individuals breed animals for their own profit.</p>
+    <div class="cloudcont"> 
+    <div id="cloud_text" class="cloud_text2">Breeding occurs when an individual or individuals breed animals for their own profit.</div>
+    </div>
         <button id="next_button">
             next...
          </button>
@@ -62,7 +72,9 @@ class TheSpeechBubble extends HTMLElement {
     connectedCallback(){
         this.shadowRoot.appendChild(template_speechbub.content.cloneNode(true));
         this.shadowRoot.querySelector("#next_button").innerText = this.getAttribute("button_text");
+        this.shadowRoot.querySelector("#next_button").onclick = () => this.increaseState("next_button");
         this.shadowRoot.querySelector("#cloud_text").innerText = this.getAttribute("cloud_text");
+        this.state=1
        
     }
 
@@ -71,6 +83,28 @@ class TheSpeechBubble extends HTMLElement {
         this.shadowRoot.querySelector("#cloud").style.cssText = `
         display:block;
         `
+    }
+
+    updateStateUI(){
+        if(this.state === 1) {
+            this.shadowRoot.querySelector("#cloud_text").innerText = this.getAttribute("cloud_text");
+        }
+        if(this.state === 2) {
+            this.shadowRoot.querySelector(".cloud_text2").innerText = this.getAttribute("cloud_text2");
+        }
+        if(this.state === 3) {
+            this.shadowRoot.querySelector("#cloud").style.cssText = `
+            display:none;
+            `
+            document.querySelector(`.${this.getAttribute("reappear")}`).buttonReappear();
+            this.state = 1;
+            this.updateStateUI();
+        }
+    }
+
+    increaseState(){
+        this.state = this.state + 1;
+        this.updateStateUI();
     }
 }
 

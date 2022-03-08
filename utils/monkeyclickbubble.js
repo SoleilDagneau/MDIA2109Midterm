@@ -61,6 +61,11 @@ class TheMonkeyClickBubble extends HTMLElement {
         display:none;
         `
     }
+    buttonReappear() {
+        this.shadowRoot.querySelector("#click_bubble").style.cssText = `
+        display:block;
+        `
+    }
 }
 
 //MUST HAVE - define the tag for the custom elements
