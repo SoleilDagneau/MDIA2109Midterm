@@ -85,7 +85,8 @@ body{
     height:100px;
     display:flex;
     position:relative;
-    left:30px;
+    left:-110px;
+    transition: left 1s;
 
 }
 .tower{
@@ -93,8 +94,9 @@ body{
     height:100px;
     display:flex;
     position:relative;
-    left:250px;
+    left:500px;
     top:-95px; 
+    transition: left 1s;
 }
 .housetext{
     font-family: 'passion one', cursive;
@@ -155,11 +157,13 @@ body{
     top:175px;
 }
 
-.contcard {
+.contcard1 {
     display: flex;
     position:relative;
-    top:160px;
+    top:190px;
     left: 100px;
+    opacity: 0%;
+    transition: opacity 2s;
 }
 
 .testingblob3 {
@@ -169,11 +173,13 @@ body{
     top:120px;
 }
 
-.contcard1 {
+.contcard2 {
     display: flex;
     position:relative;
-    bottom: 120px;
-    left: -5px;
+    bottom: -10px;
+    left: 120px;
+    opacity: 0%;
+    transition: opacity 2s;
 }
 
 .mouse {
@@ -184,6 +190,13 @@ body{
     left: 120px;
     top: 1000px;
     margin: auto;
+    animation: bounce2 2s ease infinite;
+}
+
+@keyframes bounce2 {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
 }
 
 .mouseclick {
@@ -289,11 +302,13 @@ body{
 
 .rectcont {
     position: relative;
-    left: 35px;
-    top: 90px;;
+    left: -390px;
+    top: 90px;
+    transition: left 1s;
 }
 
 .content {
     position: relative;
     top: 200px;
 }
+

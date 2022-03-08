@@ -120,7 +120,7 @@
 
 
             <div class="contcard">
-                <the-squarecard info_text="of top beauty brands still fund animal testing">
+                <the-squarecard class="contcard1" info_text="of top beauty brands still fund animal testing">
                 </the-squarecard>
             </div>
 
@@ -129,7 +129,7 @@
             </div>
 
             <div class="contcard">
-                <the-squarecard class="contcard1" info_text="of all drugs that are shown to be safe and effective in
+                <the-squarecard class="contcard2" info_text="of all drugs that are shown to be safe and effective in
             animal tests, fail in human tests.">
                 </the-squarecard>
             </div>
@@ -147,6 +147,19 @@
                 console.log(numScroll)
                 if (numScroll > 2000) {
                     document.querySelector(".pinkcard").style.right = "110px"
+                }
+                if (numScroll > 2400) {
+                    document.querySelector(".rectcont").style.left = "35px"
+                }
+                if (numScroll > 1300) {
+                    document.querySelector(".house").style.left = "30px"
+                    document.querySelector(".tower").style.left = "250px"
+                }
+                if (numScroll > 3200) {
+                    document.querySelector(".contcard1").style.opacity = "100%"
+                }
+                if (numScroll > 3400) {
+                    document.querySelector(".contcard2").style.opacity = "100%"
                 }
             
 
