@@ -72,19 +72,19 @@ class TheSquareCard extends HTMLElement {
         this.shadowRoot.querySelector("#info_text").innerText = this.getAttribute("info_text");
         this.shadowRoot.querySelector("#the_htext").innerText = this.getAttribute("the_htext");
         this.shadowRoot.querySelector("#the_manytext").innerText = this.getAttribute("the_manytext");
-       // this.shadowRoot.querySelector("#info_card").onmouseover = () => {
-           // this.textDissapear();
-           // document.querySelector(".htext").textDissapear(this.getAttribute("info_card"));
+        this.shadowRoot.querySelector("#info_card").onmouseover = () => {
+            this.textDissapear();
+            document.querySelector("the-squarecard").textDissapear(this.getAttribute("info_card"));
             
-       // } //use the template to make a clone
+        } //use the template to make a clone
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
-    //textDissappear() {
-        //this.shadowRoot.querySelector("#info_card").style.cssText = `
-       // display:none;
-       // `
-   // }
+    textDisappear() {
+        this.shadowRoot.querySelector(".htext").style.cssText = `
+        display:none;
+        `
+    }
 }
 
 //MUST HAVE - define the tag for the custom elements
