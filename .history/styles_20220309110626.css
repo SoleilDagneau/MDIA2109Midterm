@@ -63,8 +63,8 @@ body{
 .dogtextspeech {
     display: flex;
     position:absolute;
-    top:520px;
-    left:30px;
+    top:430px;
+    left:10px;
     margin: auto;
 }
 .blob{
