@@ -53,7 +53,7 @@ class TheBall extends HTMLElement {
         this.shadowRoot.querySelector(".ball").style.cssText = `
         display:flex;
         position:relative;
-        top:140px;
+        top:180px;
         left: -150px;
         `
     }

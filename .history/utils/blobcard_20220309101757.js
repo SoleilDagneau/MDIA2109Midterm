@@ -26,6 +26,9 @@ template_bcard.innerHTML = `
     #the_blobcard{
         width:250px;
     }
+    #the_blobcard:hover{
+
+    }
     .quotes{
         font-family:'passion one', cursive;
         color:#61A8FF;

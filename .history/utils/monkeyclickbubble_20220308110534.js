@@ -19,10 +19,6 @@ template_monkeyclickbubble.innerHTML = `
         top:-10px;
         margin:50px;
     }
-    #desc_text:hover{
-        background-color:#F4AFAB;
-        color:white;
-    }
     img{
         width: 200px;
     }

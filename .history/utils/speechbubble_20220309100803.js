@@ -23,8 +23,6 @@ template_speechbub.innerHTML = `
     }
     #next_button:hover{
         background-color:#AFDDFF;
-        color:#61A8FF;
-        border:3px solid #61A8FF;
     }
     #speech_bubble{
         width:250px;

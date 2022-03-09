@@ -13,7 +13,7 @@ template_ball.innerHTML = `
     animation: bounce2 2s ease infinite;
 }
 .ballpic:hover{
-    filter: grayscale(80%);
+    filter: grayscale(100%);
 }
 @keyframes bounce2 {
 	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
@@ -53,7 +53,7 @@ class TheBall extends HTMLElement {
         this.shadowRoot.querySelector(".ball").style.cssText = `
         display:flex;
         position:relative;
-        top:140px;
+        top:180px;
         left: -150px;
         `
     }

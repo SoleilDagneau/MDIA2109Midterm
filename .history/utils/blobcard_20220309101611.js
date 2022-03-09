@@ -21,16 +21,19 @@ template_bcard.innerHTML = `
         display:block;
         position:relative;
         text-align:center;
-        top:-600px;
+        top:-300px;
     }
     #the_blobcard{
         width:250px;
+    }
+    #the_blobcard:hover{
+
     }
     .quotes{
         font-family:'passion one', cursive;
         color:#61A8FF;
         font-size:110px;
-        display:flex;
+        display:none;
         position:relative;
         top:-300px;
     }
@@ -38,7 +41,7 @@ template_bcard.innerHTML = `
         font-family:'passion one', cursive;
         color:#61A8FF;
         font-size:110px;
-        display:flex;
+        display:none;
         position:relative;
         top:-350px;
         left:200px;

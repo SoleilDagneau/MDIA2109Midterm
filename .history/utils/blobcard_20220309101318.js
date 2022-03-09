@@ -21,28 +21,22 @@ template_bcard.innerHTML = `
         display:block;
         position:relative;
         text-align:center;
-        top:-600px;
+        top:-160px;
     }
     #the_blobcard{
         width:250px;
+    }
+    #the_blobcard:hover{
+
     }
     .quotes{
         font-family:'passion one', cursive;
         color:#61A8FF;
         font-size:110px;
-        display:flex;
-        position:relative;
-        top:-300px;
     }
     .quotes2{
         font-family:'passion one', cursive;
         color:#61A8FF;
-        font-size:110px;
-        display:flex;
-        position:relative;
-        top:-350px;
-        left:200px;
-
     }
 </style>
 <div class="container">
