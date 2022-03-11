@@ -15,7 +15,7 @@ body{
     display: flex;
     position: relative;
     margin: auto;
-    top: 50px;
+    top: 250px;
     left: 30px;
     right: 90px;
     justify-content: center;
@@ -26,7 +26,7 @@ body{
     margin: auto;
     position: relative;
     left: 135px;
-    top: -80px;
+    top: 120px;
     right: 90px;
     justify-content: center;
 }
@@ -35,50 +35,49 @@ body{
     display:block;
     position:relative;
     top:300px;
-  
-    
 }
 .obtitle{
     width:350px;
     display: flex;
     position:relative;
     margin: auto;
+    top:200px;
 }
 .cage{
     width:150px;
     display: flex;
     position: relative;
     left: 100px;
-    top: 50px;
+    top: 350px;
     margin: auto;
  
 }
 .dogtext{
     display: flex;
     position:absolute;
-    top:250px;
-    left:40px;
+    top:550px;
+    left:80px;
     margin: auto;
 }
 
 .dogtextspeech {
     display: flex;
     position:absolute;
-    top:230px;
-    left:10px;
+    top:520px;
+    left:30px;
     margin: auto;
 }
 .blob{
     display: flex;
     position:relative;
     left:30px;
-    top:80px;
+    top:400px;
 }
 .htext{
     display:flex;
     position: relative;
     left: 150px;
-    top:-80px;
+    top:-100px;
 }
 .house{
     width:100px;
@@ -86,15 +85,15 @@ body{
     display:flex;
     position:relative;
     left:30px;
-
 }
 .tower{
     width:100px;
     height:100px;
     display:flex;
     position:relative;
-    left:250px;
+    left:500px;
     top:-95px; 
+    transition: left 1s;
 }
 .housetext{
     font-family: 'passion one', cursive;
@@ -132,6 +131,10 @@ body{
     display:flex;
     position:relative;
     left: 30px;
+    top:-50px;
+}
+.contblob{
+    
 }
 
 
@@ -154,11 +157,13 @@ body{
     top:175px;
 }
 
-.contcard {
+.contcard1 {
     display: flex;
     position:relative;
-    top:160px;
+    top:190px;
     left: 100px;
+    opacity: 0%;
+    transition: opacity 2s;
 }
 
 .testingblob3 {
@@ -168,11 +173,13 @@ body{
     top:120px;
 }
 
-.contcard1 {
+.contcard2 {
     display: flex;
     position:relative;
-    bottom: 120px;
-    left: -5px;
+    bottom: -10px;
+    left: 120px;
+    opacity: 0%;
+    transition: opacity 2s;
 }
 
 .mouse {
@@ -183,6 +190,13 @@ body{
     left: 120px;
     top: 1000px;
     margin: auto;
+    animation: bounce2 2s ease infinite;
+}
+
+@keyframes bounce2 {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
 }
 
 .mouseclick {
@@ -269,8 +283,9 @@ body{
 
 .pinkcard {
     position: relative;
-    right: 110px;
+    right: -310px;
     top: 55px;
+    transition: right 1s;
 }
 
 .leaf {
@@ -287,8 +302,9 @@ body{
 
 .rectcont {
     position: relative;
-    left: 35px;
-    top: 90px;;
+    left: -390px;
+    top: 90px;
+    transition: left 1s;
 }
 
 .content {

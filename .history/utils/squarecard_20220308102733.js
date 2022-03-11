@@ -1,0 +1,87 @@
+//MUST HAVE - CREATE A TEMPLATE TAG
+var template_scard = document.createElement("template"); //<template> </template> RULE
+
+//To-do - CREATE THE UI HERE!
+template_scard.innerHTML = `
+
+<style>
+    #info_card {
+        background-color:#EBB2AD;
+        width: 175px;
+        height:175px;
+        border: 15px solid #F4E1E0;
+        border-radius: 50px;
+        margin: 2rem;
+    }
+    #info_text {
+        display:flex;
+        justify-content:center;
+        font-size:18px;
+        font-family: 'nunito', sans-serif;
+        color: white;
+        padding: 10px;
+        position:relative;
+        bottom:50px;
+        left: 5px;
+    }
+    #the_htext{
+        font-family:'passion one', cursive;
+        color:white;
+        text-align:center;
+        display:flex;
+        position:relative;
+        top:10px;
+    
+    }
+    #the_manytext{
+        font-family:'passion one', cursive;
+        color:black;
+        display:flex;
+        position:relative;
+        justify-content:center;
+        top:20px;
+
+    }
+
+</style>
+<div id="info_card">
+    <h2 id="the_manytext">MANY</h2>
+
+    <h3 id="the_htext">
+     OF THEM ARE EUTHANIZED.
+    </h3>
+
+    <div id="info_text">info text</div>
+</div>
+`;
+
+//MUST HAVE - CREATE A CLASS WITH HTMLELEMENT POWERS (interfaces/functionalities)
+class TheSquareCard extends HTMLElement {
+
+    //MUST HAVE - CREATE A CONSTRUCTOR TO DO INITAL ASSOCIATIONS
+    constructor(){
+        super(); //pass on the HTMLElement super powers!
+        this.attachShadow({mode:"open"}) //Attach it to the shadowRoot
+
+        //To-do - CREATE THE STATES FOR THE UI HERE!
+    }
+
+    //MUST HAVE - FUNCTION THAT RUNS AFTER IT'S CONNECTED
+    connectedCallback(){
+        this.shadowRoot.appendChild(template_scard.content.cloneNode(true));
+        this.shadowRoot.querySelector("#info_text").innerText = this.getAttribute("info_text");
+        this.shadowRoot.querySelector("#the_htext").innerText = this.getAttribute("the_htext");
+        this.shadowRoot.querySelector("#the_manytext").innerText = this.getAttribute("the_manytext");
+        this.shadowRoot.querySelector("#info_text").onmouseover = () => {
+            this.buttonDisappear();
+            document.querySelector(".dogtextspeech").buttonAppear(this.getAttribute("desc_text"));
+            //document.querySelector(".monkeyspeechbubble").buttonAppear(this.getAttribute("desc_text"));
+            //document.querySelector(".mousespeechbub").buttonAppear(this.getAttribute("desc_text"));
+        } //use the template to make a clone
+    }
+
+    //To-do - CREATE THE FUNCTIONALITIES HERE!
+}
+
+//MUST HAVE - define the tag for the custom elements
+customElements.define("the-squarecard", TheSquareCard)

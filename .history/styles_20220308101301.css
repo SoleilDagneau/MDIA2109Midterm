@@ -1,0 +1,302 @@
+body{
+    background-image: url(imgs/background.svg);
+    background-size: cover;
+}
+
+.titlepage{
+    display:block;
+    position: relative;
+    top:170px;
+    left:-40px;
+}
+
+
+.welcome{
+    display: flex;
+    position: relative;
+    margin: auto;
+    top: 50px;
+    left: 30px;
+    right: 90px;
+    justify-content: center;
+}
+
+.welcomedog {
+    display:flex;
+    margin: auto;
+    position: relative;
+    left: 135px;
+    top: -80px;
+    right: 90px;
+    justify-content: center;
+}
+/*--------------------------END OF TITLE SECTION-------------------------------*/
+.overbreeding{
+    display:block;
+    position:relative;
+    top:300px;
+  
+    
+}
+.obtitle{
+    width:350px;
+    display: flex;
+    position:relative;
+    margin: auto;
+}
+.cage{
+    width:150px;
+    display: flex;
+    position: relative;
+    left: 100px;
+    top: 50px;
+    margin: auto;
+ 
+}
+.dogtext{
+    display: flex;
+    position:absolute;
+    top:250px;
+    left:40px;
+    margin: auto;
+}
+
+.dogtextspeech {
+    display: flex;
+    position:absolute;
+    top:230px;
+    left:10px;
+    margin: auto;
+}
+.blob{
+    display: flex;
+    position:relative;
+    left:30px;
+    top:80px;
+}
+.htext{
+    display:flex;
+    position: relative;
+    left: 150px;
+    top:-80px;
+}
+.house{
+    width:100px;
+    height:100px;
+    display:flex;
+    position:relative;
+    left:30px;
+
+}
+.tower{
+    width:100px;
+    height:100px;
+    display:flex;
+    position:relative;
+    left:250px;
+    top:-95px; 
+}
+.housetext{
+    font-family: 'passion one', cursive;
+    font-size:20px;
+    color:#61A8FF;
+    display:inline;
+    position:relative;
+    left:35px;
+    bottom:10px;
+}
+.puppymill{
+    font-family: 'passion one', cursive;
+    font-size:20px;
+    color:#61A8FF;
+    display:inline;
+    position:relative;
+    left:160px;
+    bottom: 10px;
+}
+.or{
+    font-family: 'passion one', cursive;
+    font-size:70px;
+    color:#EBB2AD;
+    display:inline;
+    position:relative;
+    top:-190px;
+    left:150px;
+}
+.buildcont{
+    display:inline;
+    position:relative;
+    top:-50px;
+}
+.dog2{
+    display:flex;
+    position:relative;
+    left: 30px;
+}
+the-ball{
+    display: flex;
+    position: relative;
+    top:200px;
+}
+
+
+/*------------------END OF SECTION 1----------------------------*/
+.cosmetictesting {
+    display:block;
+    position:relative;
+    top:230px;
+    left: 75px;
+}
+
+.CATheader {
+    position:relative;
+    right:75px;
+}
+.testingblob1 {
+    display: flex;
+    position:absolute;
+    right:210px;
+    top:175px;
+}
+
+.contcard {
+    display: flex;
+    position:relative;
+    top:160px;
+    left: 100px;
+}
+
+.testingblob3 {
+    display: flex;
+    position:relative;
+    right:70px;
+    top:120px;
+}
+
+.contcard1 {
+    display: flex;
+    position:relative;
+    bottom: 120px;
+    left: -5px;
+}
+
+.mouse {
+    width:200px;
+    height: 200px;
+    display: flex;
+    position: absolute;
+    left: 120px;
+    top: 1000px;
+    margin: auto;
+}
+
+.mouseclick {
+    display: flex;
+    position:absolute;
+    top:950px;
+    left:-50px;
+    margin: auto;
+}
+
+.mousespeechbub {
+    display: flex;
+    position:absolute;
+    top:920px;
+    left:-80px;
+    margin: auto;
+}
+
+/* -------------------------------END OF SECTION 2-------------------------------*/
+.contmonkey {
+    display:flex;
+    left: 350px;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-top: 20px;
+    top: -100px;
+}
+
+.contcard3 {
+    display:flex;
+    justify-content: flex-end;
+}
+
+.hablosstitle {
+    width:350px;
+    display: flex;
+    position:relative;
+    margin: auto;
+    top: 170px;
+}
+
+.habitatloss {
+    position: relative;
+    top: 30px;
+
+}
+
+.monkey {
+    position: relative;
+    top: 200px;
+    left: 270px;
+    animation: bounce2 2s ease infinite;
+}
+
+@keyframes bounce2 {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+
+.monkeybubble {
+    position: absolute;
+    top: 300px;
+    left: 70px;
+}
+
+.monkeyspeechbubble {
+    position: absolute;
+    top: 290px;
+    left: 30px;
+}
+.branchcont {
+    position: relative;
+    top: 187px;
+    left: 15px;
+    width: 400px;
+}
+
+
+.habitatcont {
+    position: relative;
+    left: 200px;
+}
+
+.pinkcard {
+    position: relative;
+    right: 110px;
+    top: 55px;
+}
+
+.leaf {
+    position: relative;
+    right: 30px;
+    top: 100px;
+}
+
+.graphcont {
+    position: relative;
+    left: 220px;
+    bottom: -60px;
+}
+
+.rectcont {
+    position: relative;
+    left: 35px;
+    top: 90px;;
+}
+
+.content {
+    position: relative;
+    top: 200px;
+}

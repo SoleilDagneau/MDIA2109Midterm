@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,7 @@
     <title>Animal Cruelty</title>
 
     <link href="styles.css" rel="stylesheet">
-      
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap" rel="stylesheet">
@@ -27,7 +28,8 @@
     <script src="utils/rectcard.js"></script>
     <script src="utils/scrollup.js"></script>
 
-</head>       
+</head>
+
 <body>
     <div class="titlepage">
         <div class="welcome_title">
@@ -37,75 +39,129 @@
     </div>
 
     <div class="content">
-    <div class="overbreeding">
+        <div class="overbreeding">
+
+            <div class="conttitle">
+
+                <img class="obtitle" src="imgs/overbreeding.svg" alt="overbreeding title">
+            </div>
+            <div class="contcage">
+                <img class="cage" src="imgs/dogincage.svg" alt="dog in cage img">
+                <the-clickbubble class="dogtext" desc_text="CLICK ME"></the-clickbubble>
+                <the-speechbubble class="dogtextspeech" reappear="dogtext" button_text="next..."
+                    cloud_text="People breed me in puppy mills or small households in horrible conditions."
+                    cloud_text2="Breeding as many of us as they can for their own profit while we suffer.">
+                </the-speechbubble>
+            </div>
+            <div class="contblob">
+                <the-blobcard class="blob" blob_text="6M" blob_subtext="animals end up homeless each year">
+                </the-blobcard>
+            </div>
+
+            <div class="dog2">
+                <img class="dogpic2" src="imgs/layingdog.png">
+            </div>
+
+            <the-ball></the-ball>
+
+            <the-squarecard class="htext" the_manytext="MANY" the_htext="OF THEM ARE EUTHANIZED."></the-squarecard>
+
+            <div class="buildcont">
+                <h3 class="housetext">Household</h3>
+                <h3 class="puppymill">Puppy Mill</h3>
+                <img class="house" src="imgs/house.svg">
+                <img class="tower" src="imgs/building.svg">
+                <h1 class="or">OR</h1>
+            </div>
+
+        </div>
+
+
+        <div class="habitatloss">
+            <div class="conttitle">
+                <img class="hablosstitle" src="imgs/habitatloss.png" alt="habitat loss title">
+            </div>
+            <div>
+                <img class="monkey" src="imgs/monkey.svg" alt="monkey picture" width="120px">
+                <the-monkeyclickbubble class="monkeybubble" desc_text="CLICK ME"></the-monkeyclickbubble>
+                <the-speechbubble reappear="monkeybubble" class="monkeybubble, monkeyspeechbubble" button_text="next..."
+                    cloud_text="Each year palm oil plantations tear through my home."
+                    cloud_text2="We end up killed or as orphans left to fend for ourselves."></the-speechbubble>
+            </div>
+            <div class="branchcont">
+                <the-leafcard leaf_subtext="1000+"></the-leafcard>
+            </div>
+            <div class="habitatcont">
+                <the-rectcard class="pinkcard" info_text="Orangutans are killed per year due to palm oil deforestation">
+                </the-rectcard>
+            </div>
+            <div class="leaf">
+                <img src="imgs/leaf.svg" alt="leaf" width="200px">
+            </div>
+            <div class="graphcont">
+                <img src="imgs/percent.svg" alt="pi graph" width="200px">
+            </div>
+            <div class="rectcont">
+                <the-rectcard info_text="of ALL endangered species are threatened by habitat loss."></the-rectcard>
+            </div>
+
+
+        </div>
+
+
+        <div class="cosmetictesting">
+            <div class="conttitle">
+                <img class="obtitle, CATheader" src="imgs/CATheader.png" alt="cosmetictesting title">
+            </div>
+
+
+            <div class="contblob">
+                <the-blueblob class="testingblob1" blob_text="88%"></the-blueblob>
+            </div>
+
+
+            <div class="contcard">
+                <the-squarecard class="contcard1" info_text="of top beauty brands still fund animal testing.">
+                </the-squarecard>
+            </div>
+
+            <div class="contblob">
+                <the-blueblob class="testingblob3" blob_text="95%"></the-blueblob>
+            </div>
+
+            <div class="contcard">
+                <the-squarecard class="contcard2" info_text="of all drugs that are shown to be safe and effective in animal tests, fail in human tests.">
+                </the-squarecard>
+            </div>
+            <div class="contmouse">
+                <img class="mouse" src="imgs/mouse-02.svg" alt="mouse img">
+                <the-mouseclickbubble class="mouseclick" desc_text="CLICK ME"></the-mouseclickbubble>
+                <the-speechbubble reappear="mouseclick" class="mouseclick, mousespeechbub" button_text="next..."
+                cloud_text="There are other ways to test cosmetics that wont poison or kill me." 
+                cloud_text2="Some companies use modern techniques that can be safer for humans too."></the-speechbubble>
+            </div>
+
+        </div>
+        <script>
+            function handleBodyScroll(numScroll=0) {
+                console.log(numScroll)
+                if (numScroll > 2000) {
+                    document.querySelector(".pinkcard").style.right = "110px"
+                }
+                if (numScroll > 2400) {
+                    document.querySelector(".rectcont").style.left = "35px"
+                }
+                if (numScroll > 1300) {
+                    document.querySelector(".house").style.left = "30px"
+                    document.querySelector(".tower").style.left = "250px"
+                }
+                if (numScroll > 3200) {
+                    document.querySelector(".contcard1").style.opacity = "100%"
+                }
+                if (numScroll > 3400) {
+                    document.querySelector(".contcard2").style.opacity = "100%"
+                }
             
-        <div class="conttitle">
-
-            <img class="obtitle" src="imgs/overbreeding.svg" alt="overbreeding title">
-        </div>
-        <div class="contcage">
-            <img class="cage" src="imgs/dogincage.svg" alt="dog in cage img">
-            <the-clickbubble class="dogtext" desc_text="CLICK ME"></the-clickbubble>
-            <the-speechbubble class="dogtextspeech" button_text="next..."></the-speechbubble>
-        </div>
-        <div class="contblob">
-            <the-blobcard class="blob" blob_text="6M"
-            blob_subtext="animals end up homeless each year">
-            </the-blobcard>
-        </div>
-
-        <div class="dog2">
-            <img class="dogpic2" src="imgs/layingdog.png">
-        </div>
-
-        <the-ball></the-ball>
-
-        <the-squarecard class="htext" the_manytext="MANY" the_htext="OF THEM ARE EUTHANIZED."></the-squarecard>
-
-        <div class="buildcont">
-            <h3 class="housetext">Household</h3>
-            <h3 class="puppymill">Puppy Mill</h3>
-            <img class="house" src="imgs/house.svg">
-            <img class="tower" src="imgs/building.svg">
-            <h1 class="or">OR</h1>
-        </div>
-
-    </div>
-
-  
-    <div class="habitatloss">
-        <div class="conttitle">
-            <img class="hablosstitle" src="imgs/habitatloss.png" alt="habitat loss title">
-        </div>
-        <div>
-            <img class="monkey" src="imgs/monkey.svg" alt="monkey picture" width="120px">           
-            <the-monkeyclickbubble class="monkeybubble" desc_text="CLICK ME"></the-monkeyclickbubble>
-            <the-speechbubble class="monkeybubble, monkeyspeechbubble" button_text="next..."></the-speechbubble>
-        </div>
-        <div class="branchcont">
-            <the-leafcard leaf_subtext="1000+"></the-leafcard>
-        </div>
-        <div class="habitatcont">
-            <the-rectcard class="pinkcard" info_text="Orangutans are killed per year due to palm oil deforestation"></the-rectcard>
-        </div>
-        <div class="leaf">
-            <img src="imgs/leaf.svg" alt="leaf" width="200px">
-        </div>
-        <div class="graphcont">
-            <img src="imgs/percent.svg" alt="pi graph" width="200px">
-        </div>
-        <div class="rectcont">
-        <the-rectcard info_text="of ALL endangered species are threatened by habitat loss."></the-rectcard>
-        </div>
-
-
-    </div>
-  
-    
-    <div class="cosmetictesting">
-        <div class="conttitle">
-            <img class="obtitle, CATheader" src="imgs/CATheader.png" alt="cosmetictesting title">
-        </div>
 
 
         <div class="contblob">
@@ -139,4 +195,5 @@
 
 
 </body>
+
 </html>
