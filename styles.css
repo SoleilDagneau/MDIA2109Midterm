@@ -79,12 +79,13 @@ body{
     left: 150px;
     top:-100px;
 }
-.house{
+.house {
     width:100px;
     height:100px;
     display:flex;
     position:relative;
-    left:30px;
+    left: -150px;
+    transition: left 1s;
 }
 .tower{
     width:100px;
@@ -132,9 +133,6 @@ body{
     position:relative;
     left: 30px;
     top:-50px;
-}
-.contblob{
-    
 }
 
 

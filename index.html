@@ -140,60 +140,30 @@
                 cloud_text="There are other ways to test cosmetics that wont poison or kill me." 
                 cloud_text2="Some companies use modern techniques that can be safer for humans too."></the-speechbubble>
             </div>
-
         </div>
         <script>
-            function handleBodyScroll(numScroll=0) {
-                console.log(numScroll)
-                if (numScroll > 2000) {
-                    document.querySelector(".pinkcard").style.right = "110px"
-                }
-                if (numScroll > 2400) {
-                    document.querySelector(".rectcont").style.left = "35px"
-                }
-                if (numScroll > 1300) {
-                    document.querySelector(".house").style.left = "30px"
-                    document.querySelector(".tower").style.left = "250px"
-                }
-                if (numScroll > 3200) {
-                    document.querySelector(".contcard1").style.opacity = "100%"
-                }
-                if (numScroll > 3400) {
-                    document.querySelector(".contcard2").style.opacity = "100%"
-                }
-            
-
-
-        <div class="contblob">
-            <the-blueblob class="testingblob1" blob_text="88%"></the-blueblob>
-        </div>
-
-
-        <div class="contcard">
-            <the-squarecard info_text="of top beauty brands still fund animal testing">
-            </the-squarecard>
-        </div>
-    
-        <div class="contblob">
-            <the-blueblob class="testingblob3" blob_text="95%"></the-blueblob>
-        </div>
-        
-        <div class="contcard">
-            <the-squarecard class="contcard1" info_text="of all drugs that are shown to be safe and effective in
-            animal tests, fail in human tests.">
-            </the-squarecard>
-        </div>
-        <div class="contmouse">
-            <img class="mouse" src="imgs/mouse-02.svg" alt="mouse img">
-            <the-mouseclickbubble class="mouseclick" desc_text="CLICK ME"></the-mouseclickbubble>
-            <the-speechbubble class="mouseclick, mousespeechbub" button_text="next..."></the-speechbubble>
-        </div>      
-
-</div>
-
-
-
-
+        function handleBodyScroll(numScroll=0) {
+                  console.log(numScroll)
+        if (numScroll > 2000) {
+            document.querySelector(".pinkcard").style.right = "110px"
+        }
+        if (numScroll > 2400) {
+            document.querySelector(".rectcont").style.left = "35px"
+        }
+        if (numScroll > 1300) {
+            document.querySelector(".tower").style.left = "250px"
+            document.querySelector(".house").style.left = "30px"
+        }
+        if (numScroll > 3200) {
+            document.querySelector(".contcard1").style.opacity = "100%"
+        }
+        if (numScroll > 3400) {
+            document.querySelector(".contcard2").style.opacity = "100%"
+        }
+        }
+        document.body.onscroll= (e) => handleBodyScroll(e.target.documentElement.scrollTop);
+        </script>  
+              
 </body>
 
-</html>
+</html>        
