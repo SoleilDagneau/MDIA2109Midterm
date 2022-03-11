@@ -26,7 +26,7 @@
     <script src="utils/ball.js"></script>
     <script src="utils/leafcard.js"></script>
     <script src="utils/rectcard.js"></script>
-    <script src="utils/scrollup.js"></script>
+    <script src="utils/reminder.js"></script>
 
 </head>
 
@@ -36,6 +36,12 @@
             <img class="welcome" src="imgs/welcomecloud.png" alt="welcome title">
             <img class="welcomedog" src="imgs/corgi.png">
         </div>
+    </div>
+
+    <div class="reminder">
+        <the-reminder
+        reminder_header="Before you scroll..." reminder_text="Please click through each speech bubble that you see in order to learn more about the topics!"
+        ></the-reminder>
     </div>
 
     <div class="content">
@@ -141,6 +147,10 @@
                 cloud_text2="Some companies use modern techniques that can be safer for humans too."></the-speechbubble>
             </div>
         </div>
+
+        <div>
+            <button onclick="topFunction()" id="scrollUp" title="go to top">Back up</button>
+        </div>
         <script>
         function handleBodyScroll(numScroll=0) {
                   console.log(numScroll)
@@ -160,8 +170,28 @@
         if (numScroll > 3400) {
             document.querySelector(".contcard2").style.opacity = "100%"
         }
+        if (numScroll > 300) {
+            document.querySelector(".reminder").style.opacity = "100%"
+        }
         }
         document.body.onscroll= (e) => handleBodyScroll(e.target.documentElement.scrollTop);
+
+
+        var mybutton = document.getElementById("scrollUp");
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
         </script>  
               
 </body>
