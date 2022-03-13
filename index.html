@@ -27,15 +27,24 @@
     <script src="utils/leafcard.js"></script>
     <script src="utils/rectcard.js"></script>
     <script src="utils/reminder.js"></script>
+    
 
 </head>
 
 <body>
+
+<a name="home"></a>
+
+
     <div class="titlepage">
         <div class="welcome_title">
             <img class="welcome" src="imgs/welcomecloud.png" alt="welcome title">
             <img class="welcomedog" src="imgs/corgi.png">
         </div>
+    </div>
+
+    <div class="leapdog">
+        <img class="leaping_dog" src="imgs/leapdog.svg">
     </div>
 
     <div class="reminder">
@@ -81,7 +90,9 @@
             </div>
 
         </div>
-
+        <div class="leapmonkey">
+            <img class="leaping_monkey" src="imgs/fallingmonkey.svg">
+        </div>
 
         <div class="habitatloss">
             <div class="conttitle">
@@ -139,6 +150,7 @@
                 <the-squarecard class="contcard2" info_text="of all drugs that are shown to be safe and effective in animal tests, fail in human tests.">
                 </the-squarecard>
             </div>
+
             <div class="contmouse">
                 <img class="mouse" src="imgs/mouse-02.svg" alt="mouse img">
                 <the-mouseclickbubble class="mouseclick" desc_text="CLICK ME"></the-mouseclickbubble>
@@ -148,12 +160,29 @@
             </div>
         </div>
 
-        <div>
-            <button onclick="topFunction()" id="scrollUp" title="go to top">Back up</button>
+        <div class="wrapper">
+            <a href="#home"><button class="backtotop">back to top</button></a>
         </div>
+
         <script>
+
+        var mybutton = document.getElementById('topButton');
+
         function handleBodyScroll(numScroll=0) {
                   console.log(numScroll)
+        if (numScroll > 300) {
+        document.querySelector(".reminder").style.opacity = "100%"
+        }
+        if (numScroll > 400) {
+        document.querySelector(".leaping_dog").style.top = "1075px"
+        document.querySelector(".leaping_dog").style.opacity = "100%"
+        }
+        if (numScroll > 400){
+        document.querySelector(".backtotop").style.display = "block";
+        } else {
+        document.querySelector(".backtotop").style.display = "none";
+        }
+    
         if (numScroll > 2000) {
             document.querySelector(".pinkcard").style.right = "110px"
         }
@@ -164,35 +193,24 @@
             document.querySelector(".tower").style.left = "250px"
             document.querySelector(".house").style.left = "30px"
         }
+
+        if (numScroll > 2300) {
+        document.querySelector(".leaping_monkey").style.top = "980px"
+        document.querySelector(".leaping_monkey").style.opacity = "100%"
+        }
         if (numScroll > 3200) {
             document.querySelector(".contcard1").style.opacity = "100%"
         }
         if (numScroll > 3400) {
             document.querySelector(".contcard2").style.opacity = "100%"
         }
-        if (numScroll > 300) {
-            document.querySelector(".reminder").style.opacity = "100%"
-        }
-        }
+    }
+
         document.body.onscroll= (e) => handleBodyScroll(e.target.documentElement.scrollTop);
 
+    </script>
 
-        var mybutton = document.getElementById("scrollUp");
-        window.onscroll = function() {scrollFunction()};
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-        </script>  
               
 </body>
 

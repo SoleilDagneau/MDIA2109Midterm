@@ -12,6 +12,7 @@ template_scard.innerHTML = `
         border: 15px solid #F4E1E0;
         border-radius: 50px;
         margin: 2rem;
+        cursor: url(imgs/cursor.svg), auto;
     }
     #info_text {
         display:flex;
@@ -40,7 +41,6 @@ template_scard.innerHTML = `
         position:relative;
         justify-content:center;
         top:20px;
-
     }
 
 </style>

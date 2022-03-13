@@ -7,6 +7,8 @@ template_speechbub.innerHTML = `
 <style>
     #cloud {
         display: none;
+        cursor: url(imgs/cursor.svg), auto;
+
     }
     #next_button {
         background-color:#61A8FF;
@@ -20,16 +22,20 @@ template_speechbub.innerHTML = `
         position:absolute;
         top:45px;
         left:30px;
+      
     }
     #next_button:hover{
         background-color:#AFDDFF;
         color:#61A8FF;
         border:3px solid #61A8FF;
+        cursor: url(imgs/cursor.svg), auto;
+     
     }
     #speech_bubble{
         width:250px;
         display:flex;
         position:relative;
+     
         
     }
     #cloud_text, .cloud_text2{
@@ -39,6 +45,7 @@ template_speechbub.innerHTML = `
         position:absolute;
         text-align:center;
         top:20px;
+        
     }
 
     .cloudcont {
@@ -46,6 +53,7 @@ template_speechbub.innerHTML = `
         position: relative;
         left: 20px;
         bottom: 140px;
+        
 
     }
 

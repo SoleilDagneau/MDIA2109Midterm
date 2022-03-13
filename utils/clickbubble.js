@@ -17,6 +17,7 @@ template_clickbubble.innerHTML = `
         display:flex;
         justify-content:center;
         top:-10px;
+        cursor: url(imgs/cursor.svg), auto;
 
         margin:50px;
     }

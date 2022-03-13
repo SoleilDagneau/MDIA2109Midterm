@@ -17,8 +17,8 @@ template_mouseclickbubble.innerHTML = `
         display:flex;
         justify-content:center;
         top:-10px;
-
         margin:50px;
+        cursor: url(imgs/cursor.svg), auto;
     }
     #desc_text:hover{
         background-color:#F4AFAB;
