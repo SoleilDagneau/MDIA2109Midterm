@@ -199,7 +199,7 @@ html {
 .contcard1 {
     display: flex;
     position:relative;
-    top:200px;
+    top:190px;
     left: 150px;
     opacity: 0%;
     transition: opacity 2s;
