@@ -118,6 +118,9 @@
             <div class="graphcont">
                 <img src="imgs/percent.svg" alt="pi graph" width="200px">
             </div>
+            <div class="leaprabbit">
+                <img class="leaping_rabbit" src="imgs/leapingrabbit.svg">
+            </div>
             <div class="rectcont">
                 <the-rectcard info_text="of ALL endangered species are threatened by habitat loss."></the-rectcard>
             </div>
@@ -164,6 +167,28 @@
             <a href="#home"><button class="backtotop">back to top</button></a>
         </div>
 
+        <div class="confetti_container">
+            <div class="confetti_img">
+                <img src="imgs/cloud.svg" width="400">
+            </div>
+            <div class="confetti_text">
+            Thank you for viewing our infographic!
+            We hope you learned something new.
+            </div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+
         <script>
 
         var mybutton = document.getElementById('topButton');
@@ -198,11 +223,20 @@
         document.querySelector(".leaping_monkey").style.top = "980px"
         document.querySelector(".leaping_monkey").style.opacity = "100%"
         }
+
+        if (numScroll > 3500) {
+        document.querySelector(".leaping_rabbit").style.top = "1000px"
+        document.querySelector(".leaping_rabbit").style.opacity = "100%"
+        }
+
         if (numScroll > 4100) {
             document.querySelector(".contcard1").style.opacity = "100%"
         }
         if (numScroll > 4300) {
             document.querySelector(".contcard2").style.opacity = "100%"
+        }
+        if (numScroll > 4600) {
+            document.querySelector(".confetti_container").style.opacity = "100%"
         }
     }
 
